@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class Example</title>
+    <style>
+        /* Mặc định cho liên kết chưa được bấm */
+        a:link {
+            color: blue; /* Màu cho liên kết chưa được bấm */
+            text-decoration: none; /* Bỏ gạch chân */
+        }
+
+        /* Định dạng cho liên kết đã được bấm */
+        a:visited {
+            color: purple; /* Màu cho liên kết đã được bấm */
+            text-decoration: none; /* Bỏ gạch chân */
+        }
+        a:hover {
+
+color: maroon;
+
+background-color: #ffd9d9;
+
+}
+a:active {
+
+color: red;
+
+background-color: #ffd9d9;
+
+}
+    </style>
+</head>
+<body>
+    <h1>Pseudo-class for Links</h1>
+    <p>
+        <a href="https://www.example.com" target="_blank">Visit Example.com</a>
+    </p>
+    <p>
+        <a href="https://www.google.com" target="_blank">Visit Google</a>
+    </p>
+</body>
+</html>

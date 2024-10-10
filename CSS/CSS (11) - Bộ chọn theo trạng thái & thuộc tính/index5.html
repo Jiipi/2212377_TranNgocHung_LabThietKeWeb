@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors Example</title>
+    <style>
+        /* Bộ chọn dựa vào thuộc tính */
+        img[title] {
+            border: 3px solid blue; /* Tất cả img có thuộc tính title */
+        }
+
+        img[title="con vịt"] {
+            border: 3px solid green; /* img có title là "con vịt" */
+        }
+
+        img[title~="con"] {
+            border: 3px solid orange; /* img có title chứa từ "con" */
+        }
+
+        img[title|="con"] {
+            border: 3px solid purple; /* img có title bắt đầu bằng "con-" */
+        }
+
+        img[src^="/images/icons"] {
+            border: 3px solid red; /* img có src bắt đầu bằng "/images/icons" */
+        }
+
+        img[src$=".jpg"] {
+            border: 3px solid yellow; /* img có src kết thúc bằng ".jpg" */
+        }
+
+        img[title*="on"] {
+            border: 3px solid pink; /* img có title chứa "on" */
+        }
+    </style>
+</head>
+<body>
+    <h1>Attribute Selectors Example</h1>
+    
+    <img src="/images/icons/icon1.png" title="con vịt" alt="Con vịt">
+    <img src="/images/icons/icon2.png" title="con gà" alt="Con gà">
+    <img src="/images/icons/icon3.jpg" title="anh chồn" alt="Anh chồn">
+    <img src="/images/icons/icon4.jpg" title="con vịt con" alt="Con vịt con">
+    <img src="/images/icons/icon5.png" title="chó" alt="Chó">
+    
+</body>
+</html>

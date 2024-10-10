@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Position Example</title>
+    <style>
+        body {
+            background-image: url('star.png');
+            background-repeat: no-repeat; /* Không nhân bản ảnh */
+            background-position: center; /* Đặt ảnh ở giữa */
+            height: 100vh; /* Chiều cao toàn bộ trang */
+            margin: 0; /* Bỏ margin mặc định */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .example {
+            background-image: url('dot.png');
+            background-repeat: no-repeat;
+            background-position: right bottom; /* Đặt ảnh ở góc dưới bên phải */
+            padding: 20px; /* Khoảng cách bên trong */
+            border: 2px solid white; /* Đường viền trắng */
+            margin-top: 20px; /* Khoảng cách từ phần tử khác */
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        Ảnh nền ở giữa trang
+    </div>
+
+    <div class="example">
+        Ảnh nền ở góc dưới bên phải
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Background Images Example</title>
+    <style>
+        body {
+            /* Dự phòng cho các trình duyệt không hỗ trợ nhiều giá trị trong thuộc tính background */
+            background-image: url('image_fallback.png') top left no-repeat;
+            background:
+                url('image1.png') left top no-repeat,
+                url('image2.png') center center no-repeat,
+                url('image3.png') right bottom no-repeat;
+            background-color: papayawhip; /* Màu nền dự phòng */
+            height: 100vh; /* Chiều cao toàn bộ trang */
+            margin: 0; /* Bỏ margin mặc định */
+        }
+
+        h1 {
+            color: darkslategray;
+            text-align: center;
+            padding-top: 50px; /* Đệm phía trên */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Chèn Nhiều Ảnh Nền</h1>
+
+</body>
+</html>

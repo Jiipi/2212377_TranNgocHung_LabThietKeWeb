@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link States Example</title>
+    <style>
+        /* Bỏ dấu gạch chân cho tất cả các liên kết */
+        a {
+            text-decoration: none;
+        }
+
+        /* Định dạng cho liên kết chưa được bấm */
+        a:link {
+            color: maroon; /* Màu cho liên kết chưa được bấm */
+        }
+
+        /* Định dạng cho liên kết đã được bấm */
+        a:visited {
+            color: gray; /* Màu cho liên kết đã được bấm */
+        }
+
+        /* Định dạng cho liên kết khi được chọn (focus) */
+        a:focus {
+            color: maroon; /* Màu khi chọn */
+            background-color: #ffd9d9; /* Màu nền khi chọn */
+        }
+
+        /* Định dạng cho liên kết khi di chuột qua (hover) */
+        a:hover {
+            color: maroon; /* Màu khi di chuột qua */
+            background-color: #ffd9d9; /* Màu nền khi di chuột qua */
+        }
+
+        /* Định dạng cho liên kết khi nhấn vào (active) */
+        a:active {
+            color: red; /* Màu khi nhấn vào */
+            background-color: #ffd9d9; /* Màu nền khi nhấn vào */
+        }
+    </style>
+</head>
+<body>
+    <h1>Link States Example</h1>
+    <p>
+        <a href="https://www.example.com" target="_blank">Visit Example.com</a>
+    </p>
+    <p>
+        <a href="https://www.google.com" target="_blank">Visit Google</a>
+    </p>
+</body>
+</html>

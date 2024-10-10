@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Repeat Example</title>
+    <style>
+        body {
+            background-image: url('star.png');
+            /* Thay đổi giá trị dưới đây để thử nghiệm với các cách nhân bản ảnh nền */
+            background-repeat: no-repeat; /* Không nhân bản */
+            /* background-repeat: repeat-x; */ /* Nhân bản theo chiều ngang */
+            /* background-repeat: repeat-y; */ /* Nhân bản theo chiều dọc */
+            /* background-repeat: space; */ /* Nhân bản với khoảng cách */
+            /* background-repeat: round; */ /* Nhân bản với kích thước thay đổi */
+            background-size: cover; /* Đảm bảo ảnh phủ đầy */
+        }
+
+        .content {
+            height: 100vh; /* Chiều cao của vùng nội dung */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        Nhân bản ảnh nền trong CSS
+    </div>
+
+</body>
+</html>
